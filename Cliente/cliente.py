@@ -31,7 +31,8 @@ def receive_messages(client_socket):
             if rodando:
                 print("Erro ao receber mensagens. Desconectando.")
             rodando = False
-            print(f"Erro: {e}")
+            print(f"Saindo...")
+            # print(f"Erro: {e}")
             break
 
 
@@ -53,7 +54,8 @@ def send_messages(client_socket):
             mensagem = input()
             if mensagem:
                 client_socket.send(mensagem.encode('utf-8'))
-                if mensagem.lower == '/exit' or mensagem.lower() == '/quit':
+                if mensagem.lower() == '/exit' or mensagem.lower() == '/quit':
+                    client_socket.send('/exit'.encode('utf-8'))
                     rodando = False
                     break
         except (EOFError, KeyboardInterrupt):

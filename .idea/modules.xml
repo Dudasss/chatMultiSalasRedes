@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../NotificacoesGoF/.idea/NotificacoesGoF.iml" filepath="$PROJECT_DIR$/../NotificacoesGoF/.idea/NotificacoesGoF.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../RecapPythonGuanaba/.idea/RecapPythonGuanaba.iml" filepath="$PROJECT_DIR$/../RecapPythonGuanaba/.idea/RecapPythonGuanaba.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/chatMultiSalaRedes.iml" filepath="$PROJECT_DIR$/.idea/chatMultiSalaRedes.iml" />
+    </modules>
+  </component>
+</project>

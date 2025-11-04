@@ -71,7 +71,7 @@ def enviar_privado(remetente_nome, destinatario_nome, mensagem, remetente_socket
         if v == destinatario_nome:
             client_socket_destinatario = k
             break
-    mensagem_formatada = f"[Privado de {remetente_nome}: {mensagem}"
+    mensagem_formatada = f"[Privado de {remetente_nome}]: {mensagem}"
 
     if client_socket_destinatario:
         try:
@@ -173,13 +173,14 @@ def lidar_cliente(client_socket):
                                 client_socket.send(
                                     "SISTEMA: Você não pode enviar uma mensagem privada para si mesmo.".encode('utf-8'))
                             else:
-                                # Chama a nova função que criamos
+                                # Chama a nova função
                                 enviar_privado(nome, destinatario_nome, mensagem_privada, client_socket)
                         else:
                             client_socket.send("SISTEMA: Uso: /private <nome_destinatario> <sua mensagem>"
                                                .encode('utf-8'))
 
                     elif comando == '/exit' or comando == '/quit':
+                        remover_cliente(client_socket)
                         break
 
                     else:
