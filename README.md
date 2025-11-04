@@ -73,7 +73,28 @@ Informe o IP do servidor: 127.0.0.1
 Informe a porta: 7856
 Servidor iniciado em 127.0.0.1:7856
 ```
+---
+## 💻 Execução do Cliente
 
+Na máquina cliente:
+```bash
+cd cliente
+python3 cliente.py
+```
+
+O cliente solicitará:
+
+- IP do servidor e porta
+
+- Nome de usuário
+
+Exemplo:
+```bash
+Informe o IP do servidor: 192.168.56.101
+Informe a porta: 5000
+Informe seu nome de usuário: Ana
+Conectado ao servidor!
+```
 ---
 
 ## 💬 Comandos Disponíveis no Cliente
@@ -83,7 +104,6 @@ Servidor iniciado em 127.0.0.1:7856
 | `/leave`                     | Sai da sala atual                             |
 | `/private #usuario mensagem` | Envia uma mensagem privada para outro usuário |
 | `/exit` ou `/quit`           | Encerra a conexão com o servidor              |
-| `mensagem`                   | Envia uma mensagem para a sala atual          |
 
 ---
 
@@ -124,7 +144,7 @@ Servidor iniciado em 127.0.0.1:7856
 
 ---
 
-## 👥 Autores
+## 👥 Autoria
 
  - Aluna: Eduarda Samanta
 
